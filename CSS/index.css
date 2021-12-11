@@ -947,7 +947,7 @@ body{
     /*Seccion Formacion*/
     .card{
         display: flex !important;
-        height: 600px !important;
+        height: auto !important;
         margin-bottom: 30px !important;
     }
     #tituloESI{
