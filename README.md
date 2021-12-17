@@ -16,7 +16,7 @@ _Antes de ponerme a realizar esta página web, me dispuse  a realizar una serie 
 ```
 https://youtu.be/RqQ1d1qEWlE
 ```
-### Vídeo completo, HTML/CSS/JS
+### Vídeo completo de HTML/CSS/JS
 ```
 https://youtu.be/Q2imkhmhOFo
 ```
