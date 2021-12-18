@@ -2,5 +2,6 @@ User-Agent: *
 Disallow: /CSS/
 Disallow: /Documentos/
 Disallow: /JS/
+Disallow: /Imagenes/
 
 Sitemap: https://javiersantanadelgado.github.io/sitemap.xml
