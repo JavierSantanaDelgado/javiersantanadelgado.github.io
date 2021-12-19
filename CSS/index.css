@@ -457,7 +457,7 @@ body{
 .btn-success{
     background-color: #384aee !important;
     border-radius: 500% !important;
-    border: 2px solid var(--color-principal) !important;
+    border: 1px solid var(--color-principal) !important;
     transition: 0.5s !important;
 }
 .btn-success:hover{
