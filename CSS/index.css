@@ -663,6 +663,10 @@ body{
         margin-top: 26px !important;
         margin-left: -20px !important;
     }
+    #btnFritura{
+        margin-top: 45px !important;
+        margin-left: -20px !important;
+    }
     
 
 }
@@ -878,7 +882,7 @@ body{
         margin-left: -10px !important;
     }
     #btnIG{
-        margin-top: 14px !important;
+        margin-top: 44px !important;
         margin-left: -20px !important;
     }
     #btnDGR{
