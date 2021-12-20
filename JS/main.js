@@ -29,7 +29,7 @@ function cambiarLenguajes(boton){
     var eBarra4 = document.getElementById("cuartaBarra")
  
     switch(botonIniciador){
-        case("Lenguajes"):
+        case("Lenguajes de Programación"):
             primerC.textContent =  "Java"
             segundoC.textContent = "C"
             tercerC.textContent =  "C #"
@@ -62,7 +62,7 @@ function cambiarLenguajes(boton){
             eBarra4.style.display="flex"
             
             break;
-        case("Web"):
+        case("Lenguajes para Páginas Web"):
             primerC.textContent =  "HTML"
             segundoC.textContent = "CSS"
             tercerC.textContent =  "JavaScript"
@@ -94,7 +94,7 @@ function cambiarLenguajes(boton){
             eBarra3.style.display="flex"
             eBarra4.style.display="flex"
         break
-        case("Idiomas"):
+        case("Nivel de Idiomas"):
             primerC.textContent =  "Español"
             segundoC.textContent = "Inglés"
             tercerC.textContent =  "Francés"
@@ -123,6 +123,38 @@ function cambiarLenguajes(boton){
             barra4.style.backgroundColor="#e9ecef";
             barra4.ariaValueNow="100"
 
+        break;
+        case("Bases de Datos"):
+            primerC.textContent =  "MySQL"
+            segundoC.textContent = "Access"
+            tercerC.textContent =  "MongoDB"
+            cuartoC.textContent = "InfluxDB"
+
+            barra1.textContent="80%"
+            barra1.style = "width: 80%"
+            barra1.ariaValueNow="80"
+
+            barra2.style = "width: 70%"
+            barra2.textContent="70%"
+            barra2.ariaValueNow="70"
+
+            barra3.style= "width: 75%"
+            barra3.textContent="75%"
+            barra3.ariaValueNow="75"
+
+            barra4.style = "width: 55%"
+            barra4.textContent="55%"
+            barra4.ariaValueNow="55"
+
+            barra1.style.backgroundColor = "#afc2c2"
+            barra2.style.backgroundColor = "#de1717"
+            barra3.style.backgroundColor = "#5fde17"
+            barra4.style.backgroundColor = "#17d5de"
+
+            tercerC.style.display =  "flex"
+            cuartoC.style.display =  "flex"
+            eBarra3.style.display="flex"
+            eBarra4.style.display="flex"
         break;
 
         

@@ -339,10 +339,10 @@ body{
     margin-left: -10px !important;
 }
 .card:hover{
-   border: 3px solid black;
+   border: 2px solid rgb(255, 255, 255);
    transition: 0.1s;
-   font-size: 5px !important;
 }
+
 .card-img-top{
     width: 60% !important;
     height: auto;
@@ -504,7 +504,7 @@ body{
     height: auto !important;
 }
 #btnFritura{
-    margin-top: 40px !important;
+    margin-top: 15px !important;
     margin-left: -20px !important;
 }
 #btnCI{
@@ -663,6 +663,7 @@ body{
         margin-top: 26px !important;
         margin-left: -20px !important;
     }
+    
 
 }
 @media (max-width:1200px){
