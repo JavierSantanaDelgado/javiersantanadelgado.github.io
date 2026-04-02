@@ -990,4 +990,97 @@ body{
         width: 35% !important;
     }
 
+
+    /* Escena de fondo */
+body {
+    margin: 0;
+    height: 100vh;
+    background: #050505;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor que mueve al murciélago por la pantalla */
+.contenedor-vuelo {
+    position: absolute;
+    animation: trayectoria 12s linear infinite;
+}
+
+/* Cuerpo del murciélago */
+.murcielago {
+    position: relative;
+    width: 50px;
+    height: 30px;
+}
+
+.cuerpo {
+    width: 100%;
+    height: 100%;
+    background: #222;
+    border-radius: 50% 50% 40% 40%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Orejas */
+.cuerpo::before, .cuerpo::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #222;
+}
+.cuerpo::before { left: 8px; transform: rotate(-15deg); }
+.cuerpo::after { right: 8px; transform: rotate(15deg); }
+
+/* Configuración de las alas */
+.ala {
+    position: absolute;
+    top: -10px;
+    width: 70px;
+    height: 60px;
+    background: #222;
+    border-radius: 50% 50% 10% 50%;
+    z-index: 1;
+}
+
+.izquierda {
+    left: -55px;
+    transform-origin: right bottom;
+    animation: aleteo-izq 0.3s ease-in-out infinite alternate;
+}
+
+.derecha {
+    right: -55px;
+    transform-origin: left bottom;
+    animation: aleteo-der 0.3s ease-in-out infinite alternate;
+}
+
+/* --- ANIMACIONES --- */
+
+/* Aleteo Izquierdo */
+@keyframes aleteo-izq {
+    from { transform: rotateY(180deg) rotateZ(-30deg); }
+    to { transform: rotateY(180deg) rotateZ(45deg); }
+}
+
+/* Aleteo Derecho */
+@keyframes aleteo-der {
+    from { transform: rotateZ(-30deg); }
+    to { transform: rotateZ(45deg); }
+}
+
+/* Movimiento por la pantalla */
+@keyframes trayectoria {
+    0% { transform: translate(-100vw, 20vh) scale(0.7); }
+    30% { transform: translate(-20vw, -30vh) scale(1); }
+    60% { transform: translate(50vw, 10vh) scale(1.2); }
+    100% { transform: translate(110vw, -10vh) scale(0.8); }
+}
+
 }
